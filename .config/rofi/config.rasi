@@ -1,0 +1,203 @@
+* {
+  bg: #191724;
+  bg-alt: #f6c177;
+  foreground: #1f1d2e;
+  selected: #eb6f92;
+  active: #31748f;
+  text-selected: #191724;
+  text-color: #e0def4;
+  border-color: #ebbcba;
+  urgent: #c4a7e7;
+}
+
+window {
+  width: 50%;
+  transparency: "real";
+  orientation: vertical;
+  cursor: "default";
+  spacing: 0px;
+  border: 2px;
+  border-color: #ebbcba;
+  border-radius: 20px;
+  background-color: #191724;
+}
+
+mainbox {
+  padding: 15px;
+  enabled: true;
+  orientation: vertical;
+  children: [ "inputbar", "listbox" ];
+  background-color: transparent;
+}
+
+inputbar {
+  enabled: true;
+  padding: 10px 10px 200px 10px;
+  margin: 10px;
+  background-color: transparent;
+  border-radius: 25px;
+  orientation: horizontal;
+  children: [ "entry", "dummy", "mode-switcher" ];
+  background-image: url("~/.cache/wall.png", width);
+}
+
+entry {
+  enabled: true;
+  expand: false;
+  width: 20%;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #eb6f92;
+  text-color: #191724;
+  cursor: text;
+  placeholder: "🖥️ Search ";
+  placeholder-color: inherit;
+}
+
+listbox {
+  spacing: 10px;
+  padding: 10px;
+  background-color: transparent;
+  orientation: vertical;
+  children: [ "message", "listview" ];
+}
+
+listview {
+  enabled: true;
+  columns: 2;
+  lines: 6;
+  cycle: true;
+  dynamic: true;
+  scrollbar: false;
+  layout: vertical;
+  reverse: false;
+  fixed-height: false;
+  fixed-columns: true;
+  spacing: 10px;
+  background-color: transparent;
+  border: 0px;
+}
+
+dummy {
+  expand: true;
+  background-color: transparent;
+}
+
+mode-switcher {
+  enabled: true;
+  spacing: 10px;
+  background-color: transparent;
+}
+
+button {
+  width: 5%;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #191724;
+  text-color: #e0def4;
+  cursor: pointer;
+}
+
+button selected {
+  background-color: #eb6f92;
+  text-color: #191724;
+}
+
+scrollbar {
+  width: 4px;
+  border: 0;
+  handle-color: #ebbcba;
+  handle-width: 8px;
+  padding: 0;
+}
+
+element {
+  enabled: true;
+  spacing: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+element normal.normal {
+  background-color: inherit;
+  text-color: inherit;
+}
+
+element normal.urgent {
+  background-color: #c4a7e7;
+  text-color: #1f1d2e;
+}
+
+element normal.active {
+  background-color: #31748f;
+  text-color: #1f1d2e;
+}
+
+element selected.normal {
+  background-color: #eb6f92;
+  text-color: #191724;
+}
+
+element selected.urgent {
+  background-color: #c4a7e7;
+  text-color: #191724;
+}
+
+element selected.active {
+  background-color: #c4a7e7;
+  text-color: #191724;
+}
+
+element alternate.normal {
+  background-color: transparent;
+  text-color: inherit;
+}
+
+element alternate.urgent {
+  background-color: transparent;
+  text-color: inherit;
+}
+
+element alternate.active {
+  background-color: transparent;
+  text-color: inherit;
+}
+
+element-icon {
+  background-color: transparent;
+  text-color: inherit;
+  size: 36px;
+  cursor: inherit;
+}
+
+element-text {
+  background-color: transparent;
+  font: "JetBrainsMono Nerd Font Mono 12";
+  text-color: inherit;
+  cursor: inherit;
+  vertical-align: 0.5;
+  horizontal-align: 0.0;
+}
+
+message {
+  background-color: transparent;
+  border: 0px;
+}
+
+textbox {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #f6c177;
+  text-color: #191724;
+  vertical-align: 0.5;
+  horizontal-align: 0.0;
+}
+
+error-message {
+  padding: 12px;
+  border-radius: 20px;
+  background-color: #f6c177;
+  text-color: #191724;
+}

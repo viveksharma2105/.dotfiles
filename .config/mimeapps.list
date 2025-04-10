@@ -1,0 +1,32 @@
+[Added Associations]
+application/pdf=zen.desktop;
+application/x-extension-htm=zen.desktop;
+application/x-extension-html=zen.desktop;
+application/x-extension-shtml=zen.desktop;
+application/x-extension-xht=zen.desktop;
+application/x-extension-xhtml=zen.desktop;
+application/xhtml+xml=zen.desktop;
+text/html=zen.desktop;
+video/x-matroska=mpv.desktop;
+x-scheme-handler/chrome=zen.desktop;
+x-scheme-handler/http=zen.desktop;
+x-scheme-handler/https=zen.desktop;
+image/jpeg=swappy.desktop;
+video/mp4=mpv.desktop;
+
+[Default Applications]
+application/pdf=zen.desktop
+application/x-extension-htm=zen.desktop
+application/x-extension-html=zen.desktop
+application/x-extension-shtml=zen.desktop
+application/x-extension-xht=zen.desktop
+application/x-extension-xhtml=zen.desktop
+application/xhtml+xml=zen.desktop
+text/html=zen.desktop
+x-scheme-handler/chrome=zen.desktop
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
+image/jpeg=swappy.desktop
+video/mp4=mpv.desktop
+x-scheme-handler/bruno=bruno.desktop
