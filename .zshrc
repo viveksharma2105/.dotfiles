@@ -181,11 +181,11 @@ export PATH="/usr/local/go/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # Android Studio Paths
-export ANDROID_HOME="$HOME/Android/Sdk"
-export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+# export ANDROID_HOME="$HOME/Android/Sdk"
+# export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 # Turso
 export PATH="$PATH:/home/vivek/.turso"
